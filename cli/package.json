@@ -1,0 +1,19 @@
+{
+  "name": "smry",
+  "version": "1.0.0",
+  "description": "command line interface to summarize .txt files",
+  "type": "module",
+  "exports": "./bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "smry": "./bin/index.js"
+  },
+  "dependencies": {
+    "@huggingface/inference": "^2.6.4",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "figlet": "^1.7.0"
+  }
+}
