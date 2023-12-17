@@ -1,4 +1,4 @@
-# Text Summarizer Command-line Interface
+# smry
 
 smry is a command-line tool that allows you to summarize text easily and efficiently. It is part of the Text Summarizer Multiformat project, providing a convenient way to obtain summaries from the command line.
 
