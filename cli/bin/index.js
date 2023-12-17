@@ -23,7 +23,7 @@ program.addHelpText('before', chalk.bold('smry - commandline text summarizer\n')
 
 program
     .name('smry')
-    .description("smry is a commandline interface that summarizes text files or input from stdin using the Huggingface Inference API. For full documentation, see <github linmk>.")
+    .description("smry is a commandline interface that summarizes text files or input from stdin using the Huggingface Inference API. For full documentation, see https://github.com/zvoverman/text-summarizer/cli.")
     .usage("[options]\n\tcat /test.txt | smry");
 
 program.showHelpAfterError('(add --help for additional information)')
