@@ -1,12 +1,14 @@
 # smry
 
-smry is a command-line tool that allows you to summarize text easily and efficiently. It is part of the Text Summarizer Multiformat project, providing a convenient way to obtain summaries from the command line.
+**smry** is a powerful command-line tool designed for quick and efficient text summarization. As a key component of the Text Summarizer Multiformat project, it offers a seamless way to generate concise summaries directly from the command line.
 
 ## Features
 
-- **Efficient Summarization:** Quickly summarize text without the need for a complex user interface.
+- **Efficiency:** Rapidly summarize text content without the need for a complex user interface.
+  
+- **Flexibility:** Easily integrate smry into scripts, automation workflows, or utilize it for manual text summarization in the terminal.
 
-- **Flexible Usage:** Suitable for integration into scripts, automation, or manual use in the terminal.
+**Note:** This project is primarily created for educational purposes, providing a hands-on experience with building a fully functional command-line interface (CLI). Despite its educational focus, smry incorporates all the essential functionality expected from any CLI tool.
 
 ## Installation
 
