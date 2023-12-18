@@ -61,5 +61,3 @@ npm run smry -f path/to/your/text/file.txt --JSON
 ## License
 
 This project is licensed under the MIT License.
-
-Feel free to customize the examples and license information as needed.
