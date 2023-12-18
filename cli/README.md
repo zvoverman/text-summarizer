@@ -40,15 +40,21 @@ Before using the smry CLI, make sure you have Node.js installed. Then, follow th
 
 **Summarize a text file:**
 
+    ```bash
     npm run smry -f path/to/your/text/file.txt
+    ```
 
 **Specify the summarization length:**
 
+    ```bash
     npm run smry -f path/to/your/text/file.txt -l 150
+    ```
 
 **Output summary in JSON format:**
 
+    ```bash
     npm run smry -f path/to/your/text/file.txt --JSON
+    ```
     
 ## License
 
