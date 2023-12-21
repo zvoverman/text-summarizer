@@ -1,0 +1,38 @@
+{
+    "manifest_version": 2,
+    "name": "Text Summarizer",
+    "version": "1.0",
+    "description": "Summarize highlighted text on the web",
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": "icon.png",
+        "default_popup": "./src/popup/popup.html"
+    },
+    "background": {
+        "scripts": [
+            "./src/background.js"
+        ],
+        "persistent": false,
+        "type": "module"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "./src/content.js"
+            ]
+        }
+    ],
+    "options_ui": {
+        "page": "./src/popup/options.html",
+        "open_in_tab": false
+    },
+    "icons": {
+        "128": "./icons/monstera-leaf.svg"
+    },
+    "permissions": [
+        "storage"
+    ]
+}

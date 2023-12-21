@@ -1,0 +1,23 @@
+{
+  "name": "my-webpack-project",
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "source": "./src/popup/popup.html",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/popup/popup.js --bundle --outfile=dist/bundle.js",
+    "start": "web-ext run"
+  },
+  "keywords": [
+    "firefox",
+    "extension"
+  ],
+  "author": "zvoverman",
+  "license": "MIT",
+  "dependencies": {
+    "@huggingface/inference": "^2.6.4"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.10"
+  }
+}
