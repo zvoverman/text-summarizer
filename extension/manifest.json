@@ -3,10 +3,9 @@
     "name": "Text Summarizer",
     "version": "1.0",
     "description": "Summarize highlighted text on the web",
-    "browser_action": {
-        "browser_style": true,
-        "default_icon": "icon.png",
-        "default_popup": "./src/popup/popup.html"
+    "icons": {
+        "48": "./icons/monstera-leaf.svg",
+        "128": "./icons/monstera-leaf.svg"
     },
     "background": {
         "scripts": [
@@ -25,14 +24,13 @@
             ]
         }
     ],
-    "options_ui": {
-        "page": "./src/popup/options.html",
-        "open_in_tab": false
-    },
-    "icons": {
-        "128": "./icons/monstera-leaf.svg"
+    "sidebar_action": {
+        "default_icon": "./icons/monstera-leaf.svg",
+        "default_panel": "./src/sidebar/sidebar.html"
     },
     "permissions": [
-        "storage"
+        "activeTab",
+        "storage",
+        "clipboardWrite"
     ]
 }

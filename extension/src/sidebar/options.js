@@ -1,4 +1,4 @@
-// options.js
+// Options
 document.addEventListener('DOMContentLoaded', function () {
     const apiKeyInput = document.getElementById('apiKey');
     const saveButton = document.getElementById('saveButton');

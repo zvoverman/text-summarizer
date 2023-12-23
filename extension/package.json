@@ -2,10 +2,10 @@
   "name": "my-webpack-project",
   "version": "1.0.0",
   "description": "My webpack project",
-  "source": "./src/popup/popup.html",
+  "source": "./src/sidebar/sidebar.html",
   "type": "module",
   "scripts": {
-    "build": "esbuild src/popup/popup.js --bundle --outfile=dist/bundle.js",
+    "build": "esbuild src/sidebar/sidebar.js src/sidebar/options.js src/sidebar/copy-to-clipboard.js --bundle --outdir=dist",
     "start": "web-ext run"
   },
   "keywords": [

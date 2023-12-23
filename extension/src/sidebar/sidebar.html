@@ -1,0 +1,45 @@
+<!-- sidebar.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Text Summarizer Sidebar</title>
+    <link rel="stylesheet" href="sidebar.css" />
+</head>
+
+<body class="dark-theme">
+    <header class="myHeading">
+        <img src="../../icons/monstera-leaf.svg" alt="Extension Icon" class="extension-icon">
+        <h2>Text Summarizer</h2>
+        <p>Highlight text and hit "Summarize" to get started.</p>
+    </header>
+
+    <nav class="sidebar-nav">
+        <ul>
+            <li><button id="summarizeButton" type="button">Summarize</button></li>
+            <li><button id="copyButton">Copy</button></li>
+            <li class="dropdown">
+                <button class="dropbtn">Settings</button>
+                <div class="dropdown-content">
+                    <label for="apiKey" class="settings-label">API Key:</label>
+                    <input type="text" id="apiKey" placeholder="Enter your API key" class="settings-input">
+                    <button id="saveButton" class="settings-button">Save</button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="output">
+            <div id="summary"></div>
+        </div>
+    </main>
+
+    <script src="../../dist/sidebar.js"></script>
+    <script src="../../dist/options.js"></script>
+    <script src="../../dist/copy-to-clipboard.js"></script>
+
+</body>
+
+</html>

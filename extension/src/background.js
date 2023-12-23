@@ -35,7 +35,6 @@ async function processText(text) {
         model: 'pszemraj/led-base-book-summary',
         inputs: text,
         parameters: {
-            max_length: 200,
             do_sample: false,
             early_stopping: true,
         },

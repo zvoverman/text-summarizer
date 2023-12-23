@@ -8,5 +8,10 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
         // Send the selected text to the background script
         browser.runtime.sendMessage({ action: 'contentToBackground', text: selectedText });
 
+        sendResponse({ response: selectedText});
+        return true;
+
     }
+
+    return false;
 });
