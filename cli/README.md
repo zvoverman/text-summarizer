@@ -1,6 +1,6 @@
 # smry
 
-**smry** is a powerful command-line tool designed for quick and efficient text summarization. As a key component of the Text Summarizer Multiformat project, it offers a seamless way to generate concise summaries directly from the command line.
+**smry** is a powerful command-line tool designed for quick and efficient text summarization. 
 
 ## Features
 
@@ -17,7 +17,7 @@ Before using the smry CLI, make sure you have Node.js installed. Then, follow th
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/text-summarizer.git
+    git clone https://github.com/zvoverman/text-summarizer.git
     ```
 
 2. Navigate to the command-line directory:
@@ -30,6 +30,12 @@ Before using the smry CLI, make sure you have Node.js installed. Then, follow th
 
     ```bash
     npm install
+    ```
+
+4. Set API-token Environment Vairable:
+
+    ```bash
+    export HF_API_KEY="hf_YOUR-API-KEY"
     ```
 
 4. Run the CLI:
@@ -57,7 +63,9 @@ Output summary in JSON format:
 ```bash
 npm run smry -f path/to/your/text/file.txt --JSON
 ```
-    
-## License
 
-This project is licensed under the MIT License.
+Output summary as a file:
+
+```bash
+npm run smry -f path/to/your/text/file.txt -o path/to/you/output/file.txt
+```
