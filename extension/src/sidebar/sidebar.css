@@ -1,43 +1,80 @@
-/* Global Styles */
-body.dark-theme {
-    background-color: #1a1a1a;
-    color: #fff;
-    font-family: 'Arial', sans-serif;
+:root {
+    --primary-color: #00c56d;
+    --dark-primary-color: #04a059;
+    --light-primary-color: hsl(153, 64%, 60%);
+    --secondary-color: #e9e6e7;
+    --font-color: #0b090a;
+    --bg-color: #ffffff;
+}
+
+[data-theme="dark"] {
+    --primary-color: #00c56d;
+    --dark-primary-color: #04a059;
+    --light-primary-color: #59daa0;
+    --secondary-color: #161a1d;
+    --font-color: #fff;
+    --bg-color: #0b090a;
+}
+
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+button,
+input {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+/* Global Styles */
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
-header {
+header.myHeading {
     padding: 20px;
     text-align: center;
 }
 
-.extension-icon {
-    width: 30px;
-    height: 30px;
+.logo-container {
+    width: 60px; /* Adjust the width and height as needed */
+    height: 60px;
+    background-color: var(--light-primary-color); /* Choose a bright background color */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #4caf50;
+.extension-icon {
+    width: 80%; /* Adjust the size of the icon */
+    height: auto;
+}
+
+header.myHeading h2 {
+    color: var(--font-color);
     margin-top: 10px;
     text-align: center;
 }
 
-p, .myHeading img {
+header.myHeading p,
+nav.sidebar-nav {
     text-align: center;
 }
 
-.myHeading img {
-    margin-right: 8px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
 nav.sidebar-nav {
-    background-color: #333333;
+    background-color: var(--secondary-color);
     padding: 20px;
 }
 
@@ -52,22 +89,36 @@ li {
 }
 
 /* Button Styles */
-button, a.dropbtn, #copyButton {
-    display: block;
+button,
+#copyButton,
+.settings-button {
     width: 100%;
     padding: 12px;
     text-align: center;
-    background-color: #4caf50;
-    color: #fff;
-    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--font-color);
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
     border-radius: 6px;
 }
 
-button:hover, a.dropbtn:hover, #copyButton:hover {
-    background-color: #388e3c;
+button:hover,
+#copyButton:hover,
+.settings-button:hover {
+    background-color: var(--dark-primary-color);
+}
+
+#summarizeButton[disabled] {
+    pointer-events: none;
+    cursor: not-allowed;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background-color: var(--dark-primary-color);
+    color: var(--font-color);
+    border: none;
+    border-radius: 6px;
 }
 
 /* Main Content Styles */
@@ -80,11 +131,13 @@ main {
 #output {
     user-select: auto;
     padding: 10px;
-    border: 5px solid #444;
+    border: 5px solid var(--secondary-color);
     border-radius: 8px;
-    background-color: #333;
+    background-color: var(--bg-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
+    max-height: 350px;
+    overflow: scroll;
 }
 
 /* Dropdown Styles */
@@ -97,47 +150,140 @@ main {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333333;
-    min-width: 200px;
+    background-color: var(--bg-color);
+    width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 6px;
     padding: 16px;
 }
 
-/* Additional styles for dropdown content */
-.dropdown-content label, .dropdown-content input, .dropdown-content button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
+.settings-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.dropdown-content input {
+.settings-label {
+    margin-right: 10px;
+    color: var(--font-color);
+}
+
+.settings-input {
+    flex-grow: 1;
     padding: 8px;
-    background-color: #333333;
-    color: #fff;
-    border: 1px solid #4caf50;
+    border: 1px solid var(--primary-color);
+    background-color: var(--bg-color);
+    color: var(--font-color);
     border-radius: 4px;
 }
 
-.dropdown-content input:focus {
+.settings-input:focus {
     outline: none;
-    border-color: #388e3c;
+    border-color: var(--dark-primary-color);
 }
 
-.dropdown-content button {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 12px;
-    border: none;
+.settings-button {
     cursor: pointer;
-    border-radius: 6px;
+    margin-left: 10px;
 }
 
-.dropdown-content button:hover {
-    background-color: #388e3c;
+.settings-button:hover {
+    background-color: var(--dark-primary-color);
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+
+    em {
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+
+input:checked+.slider {
+    background-color: var(--primary-color);
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.credits {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color); /* Optional background color */
+    color: var(--font-color); /* Optional text color */
+    text-align: center;
+    padding: 10px;
+}
+
+.credits a {
+    color: var(--primary-color); /* Change this to the desired link color */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.credits a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.timeElapsed {
+    text-align: right;
+    padding: 2px;
+    color: var(--font-color);
+}
+
+/* Add this style to position the timestamp value */
+#timeElapsedValue {
+    font-weight: bold;
+    margin-left: 5px;
 }

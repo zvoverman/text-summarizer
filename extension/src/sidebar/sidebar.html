@@ -10,7 +10,10 @@
 
 <body class="dark-theme">
     <header class="myHeading">
-        <img src="../../icons/monstera-leaf.svg" alt="Extension Icon" class="extension-icon">
+        <div class="logo-container">
+            <img src="../../icons/monstera-leaf.svg" alt="Extension Icon" class="extension-icon">
+        </div>
+        
         <h2>Text Summarizer</h2>
         <p>Highlight text and hit "Summarize" to get started.</p>
     </header>
@@ -22,23 +25,44 @@
             <li class="dropdown">
                 <button class="dropbtn">Settings</button>
                 <div class="dropdown-content">
-                    <label for="apiKey" class="settings-label">API Key:</label>
-                    <input type="text" id="apiKey" placeholder="Enter your API key" class="settings-input">
-                    <button id="saveButton" class="settings-button">Save</button>
+                    <ul class="settings-row">
+                        <li><label for="apiKey" class="settings-label">API Key:</label></li>
+                        <li><input type="text" id="apiKey" placeholder="Enter your API key" class="settings-input"></li>
+                        <li><button id="saveButton" class="settings-button">Save</button></li>
+                        <li>
+                            <div class="theme-switch-wrapper">
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox" />
+                                    <div class="slider round"></div>
+                                </label>
+                                <em>Toggle Dark Mode</em>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </li>
         </ul>
     </nav>
 
     <main>
+        <div class="timeElapsed">
+            <p id="timeElapsed">Output time: <span id="timeElapsedValue">N/A</span></p>
+        </div>
+
         <div id="output">
             <div id="summary"></div>
         </div>
     </main>
 
+    <div class="credits">
+        <p>See <a href="https://github.com/zvoverman/text-summarizer/tree/main/extension" target="_blank">documentation</a> for help.</p>
+    </div>
+    
+
     <script src="../../dist/sidebar.js"></script>
     <script src="../../dist/options.js"></script>
     <script src="../../dist/copy-to-clipboard.js"></script>
+    <script src="../../dist/light-mode-toggle.js"></script>
 
 </body>
 

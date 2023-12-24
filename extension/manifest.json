@@ -26,7 +26,8 @@
     ],
     "sidebar_action": {
         "default_icon": "./icons/monstera-leaf.svg",
-        "default_panel": "./src/sidebar/sidebar.html"
+        "default_panel": "./src/sidebar/sidebar.html",
+        "open_at_install": true
     },
     "permissions": [
         "activeTab",

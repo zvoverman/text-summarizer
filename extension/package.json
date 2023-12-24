@@ -5,7 +5,8 @@
   "source": "./src/sidebar/sidebar.html",
   "type": "module",
   "scripts": {
-    "build": "esbuild src/sidebar/sidebar.js src/sidebar/options.js src/sidebar/copy-to-clipboard.js --bundle --outdir=dist",
+    "build": "esbuild src/sidebar/sidebar.js src/sidebar/options.js src/sidebar/copy-to-clipboard.js src/sidebar/light-mode-toggle.js --bundle --outdir=dist",
+    "build:prod": "esbuild src/sidebar/sidebar.js src/sidebar/options.js src/sidebar/copy-to-clipboard.js src/sidebar/light-mode-toggle.js --bundle --minify --outdir=dist",
     "start": "web-ext run"
   },
   "keywords": [
