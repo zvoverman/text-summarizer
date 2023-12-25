@@ -1,7 +1,7 @@
 {
-  "name": "my-webpack-project",
+  "name": "Text Summarizer",
   "version": "1.0.0",
-  "description": "My webpack project",
+  "description": "Summarize highlighted text on the web",
   "source": "./src/sidebar/sidebar.html",
   "type": "module",
   "scripts": {
