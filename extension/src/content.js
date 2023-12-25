@@ -1,17 +1,25 @@
-browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
+// Handle messages from the sidebar script
+function handleMessage(request, sender, sendResponse) {
     if (request.action === 'summarizeBtnClicked') {
-        // Get highlighted text from the window
+
         const selectedText = window.getSelection().toString();
 
-        if (selectedText === "") throw new Error("highlighted text cannot be obtained");
+        // Ensure there is highlighted text before proceeding
+        if (selectedText === '') {
+            // Send the selected text for summarization to the background script
+            browser.runtime.sendMessage({ 
+                action: 'summarize', 
+                text: selectedText, 
+                timeStamp: request.timeStamp 
+            });
 
-        console.log('Content received message from Popup. Selected Text:', selectedText);
-
-        // Send the selected text to the background script
-        browser.runtime.sendMessage({ action: 'summarize', text: selectedText, timeStamp: request.timeStamp });
-
-        sendResponse({ response: selectedText });
-        return true;
+            // Respond to the sidebar script with the selected text
+            sendResponse({ response: selectedText });
+            return true;
+        }
     }
     return false;
-});
+}
+
+// Listen for messages with the 'summarizeBtnClicked' action from the sidebar script
+browser.runtime.onMessage.addListener(handleMessage);

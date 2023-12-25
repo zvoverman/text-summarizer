@@ -1,3 +1,4 @@
+/* Theme Color Variables */
 :root {
     --primary-color: #00c56d;
     --dark-primary-color: #04a059;
@@ -17,14 +18,7 @@
 }
 
 /* Reset some default browser styles */
-body,
-h1,
-h2,
-p,
-ul,
-li,
-button,
-input {
+body, h1, h2, p, ul, li, button, input {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -46,10 +40,10 @@ header.myHeading {
 }
 
 .logo-container {
-    width: 60px; /* Adjust the width and height as needed */
+    width: 60px;
     height: 60px;
-    background-color: var(--light-primary-color); /* Choose a bright background color */
-    border-radius: 50%; /* Make it circular */
+    background-color: var(--light-primary-color);
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +52,7 @@ header.myHeading {
 }
 
 .extension-icon {
-    width: 80%; /* Adjust the size of the icon */
+    width: 80%;
     height: auto;
 }
 
@@ -126,6 +120,17 @@ main {
     padding: 20px;
     flex: 1;
     overflow-y: auto;
+}
+
+.timeElapsed {
+    text-align: right;
+    padding: 2px;
+    color: var(--font-color);
+}
+
+#timeElapsedValue {
+    font-weight: bold;
+    margin-left: 5px;
 }
 
 #output {
@@ -196,15 +201,13 @@ main {
     display: block;
 }
 
-/*Simple css to style it like a toggle switch*/
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
+}
 
-    em {
-        margin-left: 10px;
-        font-size: 1rem;
-    }
+.theme-switch-wrapper em {
+    margin-left: 15px;
 }
 
 .theme-switch {
@@ -240,11 +243,11 @@ main {
     width: 26px;
 }
 
-input:checked+.slider {
+input:checked + .slider {
     background-color: var(--primary-color);
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
     transform: translateX(26px);
 }
 
@@ -261,29 +264,17 @@ input:checked+.slider:before {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: var(--secondary-color); /* Optional background color */
-    color: var(--font-color); /* Optional text color */
+    background-color: var(--secondary-color);
+    color: var(--font-color);
     text-align: center;
     padding: 10px;
 }
 
 .credits a {
-    color: var(--primary-color); /* Change this to the desired link color */
-    text-decoration: none; /* Remove underline from the link */
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 .credits a:hover {
-    text-decoration: underline; /* Add underline on hover */
-}
-
-.timeElapsed {
-    text-align: right;
-    padding: 2px;
-    color: var(--font-color);
-}
-
-/* Add this style to position the timestamp value */
-#timeElapsedValue {
-    font-weight: bold;
-    margin-left: 5px;
+    text-decoration: underline;
 }

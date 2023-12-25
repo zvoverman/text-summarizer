@@ -1,11 +1,11 @@
 (() => {
   // src/sidebar/copy-to-clipboard.js
   document.addEventListener("DOMContentLoaded", function() {
-    var copyButton = document.getElementById("copyButton");
-    var summaryDiv = document.getElementById("summary");
+    const copyButton = document.getElementById("copyButton");
+    const summaryElement = document.getElementById("summary");
     copyButton.addEventListener("click", function() {
       console.log("Copy button clicked");
-      copyTextToClipboard(summaryDiv.innerText);
+      copyTextToClipboard(summaryElement.innerText);
     });
     function copyTextToClipboard(text) {
       console.log("Copying text:", text);

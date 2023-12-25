@@ -1,8 +1,8 @@
-# smry
+# smry :page_facing_up:
 
 **smry** is a powerful command-line tool designed for quick and efficient text summarization. 
 
-## Features
+## Features :books:
 
 - **Efficiency:** Rapidly summarize text content without the need for a complex user interface.
   
@@ -10,7 +10,7 @@
 
 **Note:** This project is primarily created for educational purposes, providing a hands-on experience with building a fully functional command-line interface (CLI). Despite its educational focus, smry incorporates all the essential functionality expected from any CLI tool.
 
-## Installation
+## Installation :file_folder:
 
 Before using the smry CLI, make sure you have Node.js installed. Then, follow these steps:
 
@@ -44,7 +44,7 @@ Before using the smry CLI, make sure you have Node.js installed. Then, follow th
     npm run smry -f path/to/your/text/file.txt
     ```
 
-## Usage Examples
+## Usage Examples :pencil2:
 
 Summarize a text file:
 
