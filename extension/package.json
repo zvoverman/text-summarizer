@@ -1,5 +1,5 @@
 {
-  "name": "Text Summarizer",
+  "name": "text-summarizer",
   "version": "1.0.0",
   "description": "Summarize highlighted text on the web",
   "source": "./src/sidebar/sidebar.html",
