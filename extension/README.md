@@ -1,8 +1,8 @@
-# Text Summarizer :leaves:
+# Text Summarizer Extension :leaves:
 
 **Text Summarizer** is a browser extension designed to provide quick and efficient text summarization directly within your browser.
 
-## Features :books:
+## Features
 
 - **User-Friendly Interface:** Summarize text with a click of a button using the intuitive browser extension interface.
 
@@ -12,7 +12,7 @@
 
 **Note:** This project aims to make text summarization accessible within the browser environment. While it provides a practical tool for summarizing text, it also serves as a learning resource for building browser extensions.
 
-## Installation :file_folder:
+## Installation
 
 1. **Download:** Get the extension files from the [GitHub repository](https://github.com/zvoverman/text-summarizer.git).
 

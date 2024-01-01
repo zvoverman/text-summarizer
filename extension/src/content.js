@@ -6,6 +6,8 @@ function handleMessage(request, sender, sendResponse) {
 
         // Ensure there is highlighted text before proceeding
         if (selectedText === '') {
+            throw new Error("Could not get selected text.")
+        } else {
             // Send the selected text for summarization to the background script
             browser.runtime.sendMessage({ 
                 action: 'summarize', 

@@ -22,6 +22,8 @@ async function handleMessage(request) {
                 },
             });
 
+            console.log(hf);
+            
             // Send the processed text to the popup
             browser.runtime.sendMessage({ action: 'summarizeResponse', processedText: summary.summary_text, timeElapsed: Date.now() - request.timeStamp });
         } catch (error) {
