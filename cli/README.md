@@ -8,8 +8,6 @@
   
 - **Flexibility:** Easily integrate smry into scripts, automation workflows, or utilize it for manual text summarization in the terminal.
 
-**Note:** This project is primarily created for educational purposes, providing a hands-on experience with building a fully functional command-line interface (CLI). Despite its educational focus, smry incorporates all the essential functionality expected from any CLI tool.
-
 ## Installation
 
 Before using the smry CLI, make sure you have Node.js installed. Then, follow these steps:
@@ -41,7 +39,7 @@ Before using the smry CLI, make sure you have Node.js installed. Then, follow th
 4. Run the CLI:
 
     ```bash
-    npm run smry -f path/to/your/text/file.txt
+    npm run smry
     ```
 
 ## Usage Examples

@@ -6,11 +6,11 @@
 
 - **User-Friendly Interface:** Summarize text with a click of a button using the intuitive browser extension interface.
 
+- **Save API Key:** Save and load API keys from native browser's local storage.
+
 - **Copy to Clipboard:** Easily copy the summarized text to your clipboard for seamless sharing.
 
 - **Dark Mode:** Toggle between light and dark modes for a comfortable reading experience.
-
-**Note:** This project aims to make text summarization accessible within the browser environment. While it provides a practical tool for summarizing text, it also serves as a learning resource for building browser extensions.
 
 ## Installation
 

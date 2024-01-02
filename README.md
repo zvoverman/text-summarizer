@@ -25,12 +25,12 @@ The Text Summarizer project encompasses a range of AI-powered tools, each design
 The Text Summarizer project is created with a dual focus:
 
 1. **Education:**
-   - The project serves as an educational resource, providing a hands-on experience in building fully functional production-ready tools.
-   - Users can gain practical insights into AI-driven applications, from command-line utilities to browser extensions and comprehensive applications.
+   - In an effort to learn more about web and application development, I created this project to both challenge and educate myself.
+   - The project serves as a learning tool, providing myself and potential users a hands-on experience in building fully functional production-ready tools.
 
 2. **Functionality:**
    - Despite its educational emphasis, Text Summarizer tools incorporate all essential functionalities expected from real-world applications.
-   - The project is continuously evolving, driven by a commitment to excellence and a passion for advancing text summarization technologies.
+   - The project is continuously evolving, driven by a commitment to excellence and a passion for learning.
 
 ## Getting Started
 
