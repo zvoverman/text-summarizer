@@ -1,5 +1,7 @@
 # Text Summarizer Extension :leaves:
 
+<img src="https://i.postimg.cc/hjydzwLL/extension-ss.png" align="right" alt="extension-ss.png" width="33%">
+
 **Text Summarizer** is a browser extension designed to provide quick and efficient text summarization directly within your browser.
 
 ## Features
@@ -22,7 +24,8 @@
     - Enable "Developer mode" in the settings.
     - Click on "Load unpacked" and select the extension folder.
 
-3. **Usage:**
-    - Highlight the text you want to summarize.
-    - Click the extension icon in your browser toolbar.
-    - Hit "Summarize" to get a quick summary.
+## Usage
+
+1. Highlight the text you want to summarize.
+2. Click the extension icon in your browser toolbar.
+3. Hit "Summarize" and wait for results!
