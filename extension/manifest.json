@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Text Summarizer",
     "version": "1.0",
     "description": "Summarize highlighted text on the web",
@@ -11,7 +11,6 @@
         "scripts": [
             "./src/background.js"
         ],
-        "persistent": false,
         "type": "module"
     },
     "content_scripts": [
@@ -24,14 +23,17 @@
             ]
         }
     ],
-    "sidebar_action": {
+    "action": {
         "default_icon": "./icons/monstera-leaf.svg",
-        "default_panel": "./src/sidebar/sidebar.html",
-        "open_at_install": true
+        "default_title": "Text Summarizer",
+        "default_popup": "./src/sidebar/sidebar.html"
     },
     "permissions": [
         "activeTab",
         "storage",
         "clipboardWrite"
+    ],
+    "host_permissions": [
+        "<all_urls>"
     ]
 }

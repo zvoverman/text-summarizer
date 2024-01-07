@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const summarizeBtn = document.getElementById('summarizeButton');
+    const summarizeBtn = document.getElementById('summarize-button');
     const summaryElement = document.getElementById('summary');
-    const timeElapsedElement = document.getElementById('timeElapsedValue');
+    const timeElapsedElement = document.getElementById('time-elapsed-value');
 
     // Event listener for the "Summarize" button
     summarizeBtn.addEventListener('click', async function () {

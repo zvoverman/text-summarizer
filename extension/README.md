@@ -1,6 +1,6 @@
 # Text Summarizer Extension :leaves:
 
-<img src="https://i.postimg.cc/hjydzwLL/extension-ss.png" align="right" alt="extension-ss.png" width="33%">
+<img src="https://i.postimg.cc/TY6fyWvt/browser-extension-ss.png" align="right" alt="extension-ss.png" width="33%">
 
 **Text Summarizer** is a browser extension designed to provide quick and efficient text summarization directly within your browser.
 
@@ -14,16 +14,20 @@
 
 - **Dark Mode:** Toggle between light and dark modes for a comfortable reading experience.
 
+- **Cross-browser Compatibility:** Runs on Firefox and Safari.
+
+> *Note* - Chromium based browsers are not supported due to varying support for manifest v3. Support for Chromium based browsers may be implemented in the future.
+
 ## Installation
 
 1. **Download:** Get the extension files from the [GitHub repository](https://github.com/zvoverman/text-summarizer.git).
 
 2. **Load Extension:**
     - Unzip the downloaded files.
-    - Open your browser and go to `chrome://extensions/` (for Chrome) or `about:addons` (for Firefox).
-    - Enable "Developer mode" in the settings.
-    - Click on "Load unpacked" and select the extension folder.
-
+    - Open your browser and go to `about:debugging` (for Firefox). (Safari Documentation to come...)
+    - Click on the "This Firefox" tab on the left sidebar. Under the "Temporary Extensions" section, click the "Load Temporary Add-on" button.
+    - Choose the manifest.json file from your extension's directory and click "Open."
+    
 ## Usage
 
 1. Highlight the text you want to summarize.

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const apiKeyInput = document.getElementById('apiKey');
-    const saveButton = document.getElementById('saveButton');
+    const apiKeyInput = document.getElementById('api-key-input');
+    const saveButton = document.getElementById('save-button');
 
     // Load API key from storage
     browser.storage.sync.get(['apiKey'], function (result) {

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const copyButton = document.getElementById('copyButton');
+    const copyButton = document.getElementById('copy-button');
     const summaryElement = document.getElementById('summary');
 
     // Event listener for the "Copy" button
