@@ -3,7 +3,7 @@
 **smry** is a powerful command-line tool designed for quick and efficient text summarization. 
 
 <p align="center" width="100%">
-    <img width="33%" src="https://i.postimg.cc/8kyfbZX7/cli-ss.png">
+    <img width="50%" src="https://i.postimg.cc/8kyfbZX7/cli-ss.png">
 </p>
 
 ## Features
