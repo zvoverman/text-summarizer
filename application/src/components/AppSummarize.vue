@@ -1,9 +1,17 @@
 <template>
-    <!-- <input v-model="api_key" class="apiKeyInput"> -->
-    <div class="textInput">
+    <div class="summary-container">
+        <div class="api_key_wrapper">
+            <p>Enter API key:</p>
+            <input v-model="api_key" class="api_input">
+        </div>
+
         <textarea v-model="text" class="input" placeholder="Enter text here!" rows="4" cols="50"></textarea>
-        <button @click="onClick(text)" class="btn" id="summarize-button">Summarize</button>
+
+        <button @click="onClick(text)" class="btn" id="summarize-button" :disabled="summary_disabled">
+            {{ summary_btn_text }}</button>
+
     </div>
+
     <div class="summary">{{ summary }}</div>
 </template>
 
@@ -20,33 +28,57 @@ export default {
             text: '',
             summary: '',
             api_key: '',
+            summary_disabled: false,
+            summary_btn_text: 'Summarize',
         };
     },
     methods: {
         onClick(text) {
-            if (this.error) {
-                this.error = null;
+            if (text && text != '') {
+                console.log("text received.");
+                bgSummarize.postMessage({ message: text, key: this.api_key });
+                this.summary_disabled = true;
+                this.summary_btn_text = "Summarizing..."
+            } else {
+                this.summary = "No text has been provided."
             }
-            console.log(`text: ${text}, key: ${this.api_key}`);
-            bgSummarize.postMessage({ message: text, key: this.api_key });
-        },
+        }
     },
     created() {
         bgSummarize.onmessage = (event) => {
-            // if (event.data.key === "working") {
-            //     this.$emit("loading", event.data.value)
-            // } else {
-            //     this[event.data.key] = event.data.value;
-            // }
-
+            // TODO: implement better event messages and handling
             this.summary = event.data.response.summary_text;
             console.log(event.data.response);
+            this.summary_disabled = false;
+            this.summary_btn_text = "Summarize"
         };
     },
 }
 </script>
 
 <style scoped>
+.summary-container {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 3%;
+}
+
+.api_key_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.api_input {
+    padding: 8px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
 /* Button Styles */
 button {
     width: 33%;
@@ -91,6 +123,7 @@ button:hover {
     border-radius: 4px;
     margin-right: 10px;
     margin-left: 10px;
+    margin-bottom: 20px;
     width: 90%;
 }
 
@@ -98,5 +131,4 @@ button:hover {
     outline: none;
     border-color: var(--dark-primary-color);
 }
-
 </style>

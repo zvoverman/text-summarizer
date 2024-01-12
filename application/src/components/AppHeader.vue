@@ -20,7 +20,7 @@ export default {
 <style scoped>
 header {
     align-items: center;
-    margin: 10px auto;
+    justify-content: center;
     padding: 10px;
 }
 

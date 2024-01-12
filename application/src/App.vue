@@ -1,6 +1,7 @@
 <template>
     <div class="container">
         <AppHeader title="Text Summarizer" />
+        <AppToggleTheme theme="light" @themeSwitch="checked => themeSwitch(checked)" />
         <AppSummarize />
     </div>
 </template>
@@ -8,12 +9,25 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
 import AppSummarize from './components/AppSummarize.vue'
+import AppToggleTheme from './components/AppToggleTheme.vue'
 
 export default {
     name: 'App',
     components: {
         AppHeader,
-        AppSummarize
+        AppToggleTheme,
+        AppSummarize,
+    },
+    methods: {
+        themeSwitch(checked) {
+            checked = !checked;
+
+            if (checked) {
+                document.documentElement.setAttribute('container', 'dark');
+            } else {
+                document.documentElement.setAttribute('container', 'light');
+            }
+        }
     }
 }
 </script>
@@ -29,7 +43,7 @@ export default {
     --bg-color: #ffffff;
 }
 
-[data-theme="dark"] {
+[container="dark"] {
     --primary-color: #00c56d;
     --dark-primary-color: #04a059;
     --light-primary-color: #59daa0;
@@ -44,6 +58,7 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     background-color: var(--bg-color);
+    color: var(--font-color);
     width: 100vh;
     height: 100vh;
 }
