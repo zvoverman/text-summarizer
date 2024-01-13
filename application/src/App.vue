@@ -3,6 +3,7 @@
         <AppHeader title="Text Summarizer" />
         <AppToggleTheme theme="light" @themeSwitch="checked => themeSwitch(checked)" />
         <AppSummarize />
+        <AppCredits />
     </div>
 </template>
 
@@ -10,6 +11,7 @@
 import AppHeader from './components/AppHeader.vue'
 import AppSummarize from './components/AppSummarize.vue'
 import AppToggleTheme from './components/AppToggleTheme.vue'
+import AppCredits from './components/AppCredits.vue'
 
 export default {
     name: 'App',
@@ -17,6 +19,7 @@ export default {
         AppHeader,
         AppToggleTheme,
         AppSummarize,
+        AppCredits,
     },
     methods: {
         themeSwitch(checked) {
