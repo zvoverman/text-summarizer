@@ -6,6 +6,8 @@
 
 The Text Summarizer project encompasses a range of AI-powered tools, each designed to cater to different use cases and preferences. 
 
+> All tools utilize the [Hugging Face JS Inference](https://huggingface.co/docs/huggingface.js/index) library to summarize input.
+
 ### Tools:
 
 1. **[Command Line Interface (smry)](https://github.com/zvoverman/text-summarizer/tree/main/cli):**

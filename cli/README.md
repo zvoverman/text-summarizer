@@ -12,6 +12,14 @@
   
 - **Flexibility:** Easily integrate smry into scripts, automation workflows, or utilize it for manual text summarization in the terminal.
 
+## Tech Stack
+
+[Commander](https://www.npmjs.com/package/commander?activeTab=readme)
+
+[Chalk](https://www.npmjs.com/package/chalk)
+
+[Figlet](https://www.npmjs.com/package/figlet)
+
 ## Installation
 
 Before using the smry CLI, make sure you have Node.js installed. Then, follow these steps:

@@ -1,8 +1,8 @@
-# Browser Extension :leaves:
+# Tex Summarizer Extension :leaves:
 
 <img src="https://i.postimg.cc/TY6fyWvt/browser-extension-ss.png" align="right" alt="extension-ss.png" width="33%">
 
-**Text Summarizer** is a browser extension designed to provide quick and efficient text summarization directly within your browser.
+**Text Summarizer Extension** is a browser extension designed to provide quick and efficient text summarization directly within your browser.
 
 ## Features
 
