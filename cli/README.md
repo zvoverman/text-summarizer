@@ -1,4 +1,4 @@
-# Text Summarizer CLI (smry) :leaves:
+# Command Line Interface (smry) :leaves:
 
 **smry** is a powerful command-line tool designed for quick and efficient text summarization. 
 

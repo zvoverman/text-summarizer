@@ -1,4 +1,4 @@
-# Text Summarizer Extension :leaves:
+# Browser Extension :leaves:
 
 <img src="https://i.postimg.cc/TY6fyWvt/browser-extension-ss.png" align="right" alt="extension-ss.png" width="33%">
 
