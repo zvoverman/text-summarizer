@@ -1,8 +1,9 @@
 'use strict'
 
-import { app, protocol, BrowserWindow } from 'electron'
+import { app, protocol, BrowserWindow, Menu } from 'electron'
 import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
 import installExtension, { VUEJS3_DEVTOOLS } from 'electron-devtools-installer'
+import path from 'path';
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
 // Scheme must be registered before the app is ready
@@ -13,8 +14,13 @@ protocol.registerSchemesAsPrivileged([
 async function createWindow() {
   // Create the browser window.
   const win = new BrowserWindow({
-    width: 800,
+    title: "Text Summarizer",
+    frame: true,
+    width: 1000,
     height: 600,
+    minWidth: 800,
+    minHeight: 600,
+    icon: path.join(__dirname, 'assets/monstera-leaf.svg'),
     webPreferences: {
       
       // Use pluginOptions.nodeIntegration, leave this alone
@@ -24,6 +30,8 @@ async function createWindow() {
       contextIsolation: !process.env.ELECTRON_NODE_INTEGRATION
     }
   })
+
+  Menu.setApplicationMenu(null);
 
   if (process.env.WEBPACK_DEV_SERVER_URL) {
     // Load the url of the dev server if in development mode
@@ -35,6 +43,8 @@ async function createWindow() {
     win.loadURL('app://./index.html')
   }
 }
+
+
 
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {

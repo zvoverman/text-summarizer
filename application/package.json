@@ -1,7 +1,12 @@
 {
   "name": "application",
   "version": "0.1.0",
+  "author": "zvoverman",
+  "description": "An Electron + Vue application to summarize text using AI.",
+  "homepage": "https://github.com/zvoverman/text-summarizer/tree/main/application",
+  "license": "MIT",
   "private": true,
+  "icon": "src/assets/monstera-leaf.svg",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

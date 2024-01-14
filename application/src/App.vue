@@ -40,7 +40,7 @@ export default {
 :root {
     --primary-color: #00c56d;
     --dark-primary-color: #04a059;
-    --light-primary-color: hsl(153, 64%, 60%);
+    --light-primary-color: #59daa0;
     --secondary-color: #e9e6e7;
     --font-color: #0b090a;
     --bg-color: #ffffff;
@@ -62,7 +62,13 @@ export default {
     text-align: center;
     background-color: var(--bg-color);
     color: var(--font-color);
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: 'hidden';
 }
 </style>
