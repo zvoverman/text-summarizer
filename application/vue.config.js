@@ -17,7 +17,11 @@ module.exports = defineConfig({
         linux: {
           icon: 'src/assets/monstera-leaf.svg',
           category: 'Utility',
-        }
+        },
+        mac: {
+          icon: 'src/assets/monstera-leaf.svg',
+          category: 'Utility',
+        },
       }
     }
   }
