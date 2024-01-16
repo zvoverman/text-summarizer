@@ -6,7 +6,7 @@
 
 - **User-Friendly Interface:** Enjoy a seamless text summarization experience through the intuitive desktop application.
 
-- **Cross OS Compatible:** Summarize text on your operating system of choice thanks to Electron.
+- **Cross OS Compatiblity:** Summarize text on your operating system of choice thanks to Electron.
 
 - **Dark Theme:** Toggle between light and dark modes for a comfortable reading experience.
 

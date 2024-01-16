@@ -1,12 +1,12 @@
-# Text Summarizer :leaves:
+# Text Summarizer :robot: :leaves:
 
-**Text Summarizer** is a comprehensive, AI-powered project offering versatile tools for efficient text summarization.
+The **Text Summarizer** project is a comprehensive, AI-powered project offering versatile tools for efficient text summarization.
 
 ## Project Overview
 
 The Text Summarizer project encompasses a range of AI-powered tools, each designed to cater to different use cases and preferences. 
 
-> All tools utilize the [Hugging Face JS Inference](https://huggingface.co/docs/huggingface.js/index) library to summarize input.
+> All tools utilize the [Hugging Face Inference library](https://huggingface.co/docs/huggingface.js/index) library to summarize input.
 
 ### Tools:
 
