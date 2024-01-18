@@ -1,5 +1,6 @@
 import { HfInference } from '@huggingface/inference'
 
+// Listen for message from AppSummarize.vue
 addEventListener("message", (event) => {
 
     handleMessage(event.data);
@@ -23,10 +24,11 @@ async function handleMessage(data) {
             },
         });
 
+        // Post message to AppSummarizer.vue
         postMessage({ response: summary });
 
     } catch (error) {
         console.error(error.message);
-        postMessage({ response: "error in background worker" })
+        postMessage({ response: "Error in background worker", error: error });
     }
 }

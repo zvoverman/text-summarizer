@@ -20,7 +20,6 @@ export default {
 </script>
 
 <style scoped>
-/* Theme Switch Checkbox */
 .theme-switch-wrapper {
     display: flex;
     justify-content: center;

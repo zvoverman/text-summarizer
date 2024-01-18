@@ -1,11 +1,12 @@
 <template>
     <div class="container">
-        <AppHeader title="Text Summarizer" />
+        <AppHeader />
         <AppToggleTheme theme="light" @themeSwitch="checked => themeSwitch(checked)" />
         <AppSummarize />
         <AppCredits />
     </div>
 </template>
+
 
 <script>
 import AppHeader from './components/AppHeader.vue'
@@ -24,7 +25,6 @@ export default {
     methods: {
         themeSwitch(checked) {
             checked = !checked;
-
             if (checked) {
                 document.documentElement.setAttribute('container', 'dark');
             } else {
@@ -34,6 +34,7 @@ export default {
     }
 }
 </script>
+
 
 <style>
 /* Theme Color Variables */
@@ -55,6 +56,7 @@ export default {
     --bg-color: #0b090a;
 }
 
+/* App Styles */
 #app {
     font-family: 'Merriweather', serif;
     -webkit-font-smoothing: antialiased;

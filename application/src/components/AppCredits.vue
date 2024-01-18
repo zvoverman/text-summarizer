@@ -1,9 +1,11 @@
 <template>
     <div class="credits">
-        <p>See <a href="https://github.com/zvoverman/text-summarizer/tree/main/application" target="_blank">documentation</a>
+        <p>See <a href="https://github.com/zvoverman/text-summarizer/tree/main/application"
+                target="_blank">documentation</a>
             for help.</p>
     </div>
 </template>
+
 
 <script>
 export default {
@@ -11,8 +13,8 @@ export default {
 }
 </script>
 
+
 <style scoped>
-/* Credits */
 .credits {
     width: 100%;
     background-color: var(--secondary-color);
