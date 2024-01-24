@@ -11,16 +11,16 @@ The Text Summarizer project encompasses a range of AI-powered tools, each design
 ### Tools:
 
 1. **[Command Line Interface (smry)](https://github.com/zvoverman/text-summarizer/tree/main/cli):**
-   - A powerful command-line tool for swift and efficient text summarization.
-   - Features include efficiency, flexibility, and ease of integration into scripts or manual summarization in the terminal.
+   - A command-line tool for swift text summarization.
+   - Features include compatibility with piping (|) as well as a variety of useful command line options.
 
 2. **[Browser Extension](https://github.com/zvoverman/text-summarizer/tree/main/extension):**
-   - A user-friendly browser extension for quick and efficient text summarization.
+   - A cross-compatible extension for efficient text summarization.
    - Features include an intuitive interface, copy-to-clipboard functionality, and a toggleable dark mode.
 
-3. **[Application (Under Development)](https://github.com/zvoverman/text-summarizer/tree/main/application):**
-   - A full-stack application for a comprehensive text summarization experience.
-   - Features (to be included) will encompass cross-platform compatibilty, a user-friendly interface, and customizable options.
+3. **[Application](https://github.com/zvoverman/text-summarizer/tree/main/application):**
+   - A multiplatform desktop app using Electron.
+   - Features include cross-platform compatibilty, a user-friendly interface, and customizable options _(coming soon)_.
 
 ## Purpose and Focus
 

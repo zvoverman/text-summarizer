@@ -10,8 +10,6 @@
 
 - **Dark Theme:** Toggle between light and dark modes for a comfortable reading experience.
 
-> *Note* - This project is still under development...
-
 ## Tech Stack
 
 [Electron](https://www.electronjs.org/)

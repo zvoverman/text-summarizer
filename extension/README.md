@@ -2,11 +2,11 @@
 
 <img src="https://i.postimg.cc/TY6fyWvt/browser-extension-ss.png" align="right" alt="extension-ss.png" width="33%">
 
-**Text Summarizer Extension** is a browser extension designed to provide quick and efficient text summarization directly within your browser.
+**Text Summarizer Extension** is a cross-compatible browser extension designed to provide quick and efficient text summarization.
 
 ## Features
 
-- **User-Friendly Interface:** Summarize text with a click of a button using the intuitive browser extension interface.
+- **User-Friendly Interface:** Summarize text by hightlighting any text on the webpage.
 
 - **Save API Key:** Save and load API keys from native browser's local storage.
 
@@ -24,7 +24,7 @@
 
 2. **Load Extension:**
     - Unzip the downloaded files.
-    - Open your browser and go to `about:debugging` (for Firefox). (Safari Documentation to come...)
+    - Open your browser and go to `about:debugging` (for Firefox). _(Safari Documentation to come...)_
     - Click on the "This Firefox" tab on the left sidebar. Under the "Temporary Extensions" section, click the "Load Temporary Add-on" button.
     - Choose the manifest.json file from your extension's directory and click "Open."
     
