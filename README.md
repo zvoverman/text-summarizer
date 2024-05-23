@@ -40,7 +40,7 @@ Explore the individual tools by visiting their respective directories:
 
 - [Command Line Interface](https://github.com/zvoverman/text-summarizer/tree/main/cli)
 - [Browser Extension](https://github.com/zvoverman/text-summarizer/tree/main/extension)
-- [Application (Under Development)](https://github.com/zvoverman/text-summarizer/tree/main/application)
+- [Application](https://github.com/zvoverman/text-summarizer/tree/main/application)
 
 Detailed instructions on installation, configuration, and usage are provided in each tool's README file.
 
